@@ -1,0 +1,28 @@
+{
+  "name": "todolistangular",
+  "version": "1.0.0",
+  "description": "to do list in angular",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlondc/angularTodoList.git"
+  },
+  "keywords": [
+    "angular",
+    "to",
+    "do",
+    "list"
+  ],
+  "author": "mdc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlondc/angularTodoList/issues"
+  },
+  "homepage": "https://github.com/marlondc/angularTodoList#readme",
+  "devDependencies": {
+    "bower": "^1.7.9"
+  }
+}
