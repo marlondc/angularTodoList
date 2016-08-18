@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="toDoApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controllers.js"></script>
+    <script type="text/javascript" src="ToDoFactory.js"></script>
+    <script type="text/javascript" src="ToDoService.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller="ToDoController as controller">
+      <p ng-repeat="toDo in controller.toDos">
+        {{ toDo.text }}: {{ toDo.completed ? "completed" : "not completed" }}
+        <button ng-click="toDo.complete()">Complete</button>
+      </p>
+      <input type="text" ng-model="toDoText">
+      <button ng-click="controller.addToDo(toDoText)">Add a ToDo</button>
+      <button ng-click="controller.removeCompletedToDos()">Remove completed ToDos</button>
+    </div>
+  </body>
+</html>
